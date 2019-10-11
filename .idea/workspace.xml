@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ed3133f-068a-4580-9db6-e5f51271554d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rooms/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/rooms/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rooms/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rooms/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conversations/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/conversations/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conversations/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/conversations/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lists/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/lists/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lists/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/lists/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reservations/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservations/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reservations/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservations/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reviews/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/reviews/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reviews/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/reviews/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +19,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="parkyes90 &lt;parkyes90@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1S0OOu6vn5SPQHwd6L16JxqZlHg" />
@@ -98,8 +103,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570697017395</updated>
-      <workItem from="1570697022372" duration="13774000" />
+      <workItem from="1570697022372" duration="17904000" />
     </task>
+    <task id="LOCAL-00001" summary="add&#10;create rooms models">
+      <created>1570776119525</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570776119525</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,5 +128,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add&#10;create rooms models" />
+    <option name="LAST_COMMIT_MESSAGE" value="add&#10;create rooms models" />
   </component>
 </project>
