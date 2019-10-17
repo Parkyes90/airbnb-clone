@@ -39,6 +39,7 @@ class Command(BaseCommand):
         created_clean = flatten(list(created_photos.values()))
         for pk in created_clean:
             room = Room.objects.get(pk=pk)
+            room.name = seeder.faker.address()
             for i in range(3, random.randint(6, 10)):
                 Photo.objects.create(
                     caption=seeder.faker.sentence(),
@@ -59,7 +60,7 @@ class Command(BaseCommand):
                 magic_number = random.randint(0, 15)
                 if magic_number % 2 == 0:
                     room.house_rules.add(r)
-
+            room.save()
         self.stdout.write(self.style.SUCCESS(f"{number} rooms created!"))
 
     def add_arguments(self, parser):

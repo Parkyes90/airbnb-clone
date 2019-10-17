@@ -2,55 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ed3133f-068a-4580-9db6-e5f51271554d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lists/management/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lists/management/commands/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lists/management/commands/seed_lists.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reservations/management/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reservations/management/commands/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reservations/management/commands/seed_reservations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reviews/management/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reviews/management/commands/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reviews/management/commands/seed_reviews.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rooms/management/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rooms/management/commands/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rooms/management/commands/seed_amenities.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rooms/management/commands/seed_facilities.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rooms/management/commands/seed_house_rules.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rooms/management/commands/seed_room_types.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rooms/management/commands/seed_rooms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/management/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/management/commands/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/management/commands/seed_users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.flake8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rooms/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/partials/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/partials/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/rooms/room_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conversations/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/conversations/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conversations/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/conversations/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conversations/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/conversations/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lists/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/lists/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lists/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/lists/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lists/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lists/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservations/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/reservations/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservations/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservations/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reviews/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reviews/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rooms/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/rooms/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rooms/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rooms/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rooms/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rooms/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rooms/management/commands/seed_rooms.py" beforeDir="false" afterPath="$PROJECT_DIR$/rooms/management/commands/seed_rooms.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +65,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -175,7 +140,8 @@
       <workItem from="1570697022372" duration="21034000" />
       <workItem from="1571011306528" duration="4768000" />
       <workItem from="1571030852813" duration="9596000" />
-      <workItem from="1571043931799" duration="5588000" />
+      <workItem from="1571043931799" duration="9595000" />
+      <workItem from="1571215230161" duration="10827000" />
     </task>
     <task id="LOCAL-00001" summary="add&#10;create rooms models">
       <created>1570776119525</created>
@@ -205,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571031696076</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add&#10;add seeds with faker">
+      <created>1571120774420</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1571120774420</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +202,7 @@
     <MESSAGE value="add&#10;create conversations, reservations, lists, reviews models" />
     <MESSAGE value="add&#10;rooms admin customizing" />
     <MESSAGE value="add&#10;add related_field to models" />
-    <option name="LAST_COMMIT_MESSAGE" value="add&#10;add related_field to models" />
+    <MESSAGE value="add&#10;add seeds with faker" />
+    <option name="LAST_COMMIT_MESSAGE" value="add&#10;add seeds with faker" />
   </component>
 </project>
