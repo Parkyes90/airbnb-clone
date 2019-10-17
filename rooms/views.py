@@ -1,4 +1,7 @@
-from django.views.generic import ListView
+from django.http import Http404
+from django.shortcuts import render, redirect
+from django.urls import reverse
+from django.views.generic import ListView, DetailView
 
 from rooms.models import Room
 
@@ -17,3 +20,9 @@ class HomeView(ListView):
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
         return context
+
+
+class RoomDetail(DetailView):
+    """ RoomDetail Definition"""
+
+    model = Room
