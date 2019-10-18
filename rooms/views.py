@@ -108,7 +108,3 @@ class SearchView(View):
 
             form = SearchForm()
             return render(request, "rooms/search.html", {"form": form})
-
-        return render(
-            request, "rooms/search.html", {"form": form, "rooms": qs}
-        )
