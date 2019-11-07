@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block page_title %}
+    Login
+{% endblock %}
+
+{% block search-bar %}
+{% endblock %}
+
+{% block content %}
+    <form method="POST" accept-charset="{% url "users:login" %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button>Login</button>
+    </form>
+{% endblock %}
