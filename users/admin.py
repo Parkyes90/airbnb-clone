@@ -42,4 +42,6 @@ class CustomUserAdmin(UserAdmin):
         "is_staff",
         "is_superuser",
         "date_joined",
+        "email_verified",
+        "email_secret",
     )
