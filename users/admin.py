@@ -41,4 +41,5 @@ class CustomUserAdmin(UserAdmin):
         "super_host",
         "is_staff",
         "is_superuser",
+        "date_joined",
     )

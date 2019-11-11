@@ -37,9 +37,15 @@ class User(AbstractUser):
     bio = models.TextField(blank=True)
     birth_date = models.DateField(blank=True, null=True)
     language = models.CharField(
-        choices=LANGUAGE_CHOICES, max_length=2, blank=True
+        choices=LANGUAGE_CHOICES,
+        max_length=2,
+        blank=True,
+        default=LANGUAGE_KOREAN,
     )
     currency = models.CharField(
-        choices=CURRENCY_CHOICES, max_length=3, blank=True
+        choices=CURRENCY_CHOICES,
+        max_length=3,
+        blank=True,
+        default=CURRENCY_KRW,
     )
     super_host = models.BooleanField(default=False)
