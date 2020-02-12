@@ -44,4 +44,5 @@ class CustomUserAdmin(UserAdmin):
         "date_joined",
         "email_verified",
         "email_secret",
+        "login_method",
     )
