@@ -10,6 +10,8 @@ urlpatterns = [
     path(
         "login/github/callback", views.github_callback, name="github-callback"
     ),
+    path("login/kakao", views.kakao_login, name="kakao-login"),
+    path("login/kakao/callback", views.kakao_callback, name="kakao-callback"),
     path("logout", views.log_out, name="logout"),
     path("signup", views.SignUpView.as_view(), name="signup"),
     path(
