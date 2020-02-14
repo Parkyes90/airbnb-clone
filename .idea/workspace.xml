@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ed3133f-068a-4580-9db6-e5f51271554d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/airbnb-clone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/airbnb-clone.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/partials/social_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/social_login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +41,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1S0OOu6vn5SPQHwd6L16JxqZlHg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -61,8 +69,9 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -168,7 +177,9 @@
       <workItem from="1578289527539" duration="1593000" />
       <workItem from="1578384589555" duration="599000" />
       <workItem from="1578463477255" duration="4000" />
-      <workItem from="1581487355490" duration="11355000" />
+      <workItem from="1581487355490" duration="12621000" />
+      <workItem from="1581585501604" duration="3665000" />
+      <workItem from="1581654908108" duration="1430000" />
     </task>
     <task id="LOCAL-00001" summary="add&#10;create rooms models">
       <created>1570776119525</created>
@@ -261,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581496729454</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat($ProjectFilePath): Add KAKAO Social Login">
+      <created>1581580445193</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1581580445193</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,13 +312,26 @@
     <MESSAGE value="add signup view" />
     <MESSAGE value="add email verification" />
     <MESSAGE value="feat($ProjectFilePath): Add Github Login" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat($ProjectFilePath): Add Github Login" />
+    <MESSAGE value="feat($ProjectFilePath): Add KAKAO Social Login" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat($ProjectFilePath): Add KAKAO Social Login" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2" timestamp="1581496729337">
+    <state x="2508" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581655007548">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581496729337" />
+    <state x="2508" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581655007548" />
+    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2" timestamp="1581580445123">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581580445123" />
+    <state x="2136" y="105" width="1536" height="894" key="DiffContextDialog" timestamp="1581580433015">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2136" y="105" width="1536" height="894" key="DiffContextDialog/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581580433015" />
+    <state x="2471" y="186" width="874" height="732" key="EditFileWatcherDialog" timestamp="1581655470731">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2471" y="186" width="874" height="732" key="EditFileWatcherDialog/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581655470731" />
     <state x="2696" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581488887392">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -321,19 +352,23 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1799" height="244" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581580313503" />
-    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1581496732916">
+    <state x="2402" y="187" key="SettingsEditor" timestamp="1581655472340">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581496732916" />
+    <state x="2402" y="187" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581655472340" />
+    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1581580450905">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581580450905" />
     <state x="4395" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@3840.0.1920.1080" timestamp="1576800000484" />
     <state x="2087" y="125" width="1653" height="855" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1581495737189">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2087" y="125" width="1653" height="855" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581495737189" />
-    <state x="4465" y="366" key="com.intellij.ide.util.TipDialog" timestamp="1578384623613">
+    <state x="4465" y="366" key="com.intellij.ide.util.TipDialog" timestamp="1581585503903">
       <screen x="3840" y="0" width="1920" height="1080" />
     </state>
-    <state x="4465" y="366" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1578384623613" />
+    <state x="4465" y="366" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581585503903" />
     <state x="4465" y="366" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@3840.0.1920.1080" timestamp="1577064574102" />
     <state x="4449" y="225" width="701" height="628" key="find.popup" timestamp="1576650700964">
       <screen x="3840" y="0" width="1920" height="1080" />
