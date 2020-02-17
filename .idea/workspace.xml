@@ -2,8 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ed3133f-068a-4580-9db6-e5f51271554d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mixins/auth/auth_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mixins/auth/form_input.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mixins/room_card.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/airbnb-clone.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/airbnb-clone.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rooms/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rooms/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rooms/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/rooms/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/partials/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/partials/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/partials/social_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/social_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rooms/room_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rooms/room_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/users/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/users/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/users/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/users/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +73,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true&#10;/home/zen/PycharmProjects/airbnb-clone/.env" />
-    <property name="last_opened_file_path" value="$USER_HOME$/projects/custom-react-table" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/mixins" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -68,15 +87,16 @@
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/uploads/room_photos" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/mixins" />
+      <recent name="$PROJECT_DIR$/static/img" />
       <recent name="$PROJECT_DIR$/reservations" />
       <recent name="$PROJECT_DIR$/lists" />
       <recent name="$PROJECT_DIR$/reviews" />
-      <recent name="$PROJECT_DIR$/rooms/management/commands" />
-      <recent name="$PROJECT_DIR$/users" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/mixins/auth" />
+      <recent name="$PROJECT_DIR$/uploads/room_photos" />
     </key>
   </component>
   <component name="RunManager">
@@ -173,7 +193,7 @@
       <workItem from="1578463477255" duration="4000" />
       <workItem from="1581487355490" duration="12621000" />
       <workItem from="1581585501604" duration="3665000" />
-      <workItem from="1581654908108" duration="1567000" />
+      <workItem from="1581654908108" duration="18131000" />
     </task>
     <task id="LOCAL-00001" summary="add&#10;create rooms models">
       <created>1570776119525</created>
@@ -280,11 +300,28 @@
       <option name="project" value="LOCAL" />
       <updated>1581656390555</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fix($ProjectFilePath): fix typo">
+      <created>1581656568905</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1581656568906</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -315,21 +352,26 @@
     <MESSAGE value="feat($ProjectFilePath): Add Github Login" />
     <MESSAGE value="feat($ProjectFilePath): Add KAKAO Social Login" />
     <MESSAGE value="build($ProjectFilePath): Add tailwind css" />
-    <option name="LAST_COMMIT_MESSAGE" value="build($ProjectFilePath): Add tailwind css" />
+    <MESSAGE value="fix($ProjectFilePath): fix typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix($ProjectFilePath): fix typo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2508" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581655007548">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2508" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581655007548" />
-    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2" timestamp="1581656532375">
+    <state x="2627" y="339" width="562" height="427" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581924786509">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581656532375" />
-    <state x="2136" y="105" width="1536" height="894" key="DiffContextDialog" timestamp="1581656531249">
+    <state x="2627" y="339" width="562" height="427" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581924786509" />
+    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2" timestamp="1581656568783">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2136" y="105" width="1536" height="894" key="DiffContextDialog/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581656531249" />
+    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581656568783" />
+    <state x="2136" y="105" width="1536" height="894" key="DiffContextDialog" timestamp="1581656552215">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2136" y="105" width="1536" height="894" key="DiffContextDialog/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581656552215" />
     <state x="2471" y="186" width="874" height="732" key="EditFileWatcherDialog" timestamp="1581655470731">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -338,30 +380,30 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2696" y="310" width="424" height="484" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581488887392" />
-    <state width="1799" height="244" key="GridCell.Tab.0.bottom" timestamp="1581656477063">
+    <state width="1799" height="244" key="GridCell.Tab.0.bottom" timestamp="1581923775281">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1799" height="244" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581656477063" />
-    <state width="1799" height="244" key="GridCell.Tab.0.center" timestamp="1581656477063">
+    <state width="1799" height="244" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581923775281" />
+    <state width="1799" height="244" key="GridCell.Tab.0.center" timestamp="1581923775281">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1799" height="244" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581656477063" />
-    <state width="1799" height="244" key="GridCell.Tab.0.left" timestamp="1581656477063">
+    <state width="1799" height="244" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581923775281" />
+    <state width="1799" height="244" key="GridCell.Tab.0.left" timestamp="1581923775281">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1799" height="244" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581656477063" />
-    <state width="1799" height="244" key="GridCell.Tab.0.right" timestamp="1581656477063">
+    <state width="1799" height="244" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581923775281" />
+    <state width="1799" height="244" key="GridCell.Tab.0.right" timestamp="1581923775281">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1799" height="244" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581656477063" />
+    <state width="1799" height="244" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581923775281" />
     <state x="2402" y="187" key="SettingsEditor" timestamp="1581655472340">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2402" y="187" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581655472340" />
-    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1581656395996">
+    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1581656573015">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581656395996" />
+    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581656573015" />
     <state x="4395" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@3840.0.1920.1080" timestamp="1576800000484" />
     <state x="2087" y="125" width="1653" height="855" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1581495737189">
       <screen x="1920" y="0" width="1920" height="1080" />
@@ -372,9 +414,10 @@
     </state>
     <state x="4465" y="366" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581585503903" />
     <state x="4465" y="366" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@3840.0.1920.1080" timestamp="1577064574102" />
-    <state x="4449" y="225" width="701" height="628" key="find.popup" timestamp="1576650700964">
-      <screen x="3840" y="0" width="1920" height="1080" />
+    <state x="2529" y="225" width="701" height="658" key="find.popup" timestamp="1581919232123">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="2529" y="225" width="701" height="658" key="find.popup/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581919232123" />
     <state x="4449" y="225" width="701" height="628" key="find.popup/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@3840.0.1920.1080" timestamp="1576650700964" />
   </component>
 </project>
