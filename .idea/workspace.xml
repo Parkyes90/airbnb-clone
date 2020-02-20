@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ed3133f-068a-4580-9db6-e5f51271554d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/users/update-password.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mixins/auth/auth_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mixins/auth/auth_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/users/update-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/users/update-profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,7 +176,7 @@
       <workItem from="1581585501604" duration="3665000" />
       <workItem from="1581654908108" duration="19318000" />
       <workItem from="1581988397137" duration="588000" />
-      <workItem from="1582085337810" duration="12905000" />
+      <workItem from="1582085337810" duration="14080000" />
     </task>
     <task id="LOCAL-00001" summary="add&#10;create rooms models">
       <created>1570776119525</created>
@@ -331,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582174729602</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="feat($ProjectFilePath): add Password Change">
+      <created>1582176207524</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1582176207524</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,7 +383,8 @@
     <MESSAGE value="feat($ProjectFilePath): Add Message" />
     <MESSAGE value="feat($ProjectFilePath): Add User Profile" />
     <MESSAGE value="feat($ProjectFilePath): Add Profile View" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat($ProjectFilePath): Add Profile View" />
+    <MESSAGE value="feat($ProjectFilePath): add Password Change" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat($ProjectFilePath): add Password Change" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2508" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581655007548">
@@ -393,10 +395,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2627" y="339" width="562" height="427" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581924786509" />
-    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2" timestamp="1582174729476">
+    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2" timestamp="1582176207362">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582174729476" />
+    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582176207362" />
     <state x="2136" y="105" width="1536" height="894" key="DiffContextDialog" timestamp="1581656552215">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -429,10 +431,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2402" y="187" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581655472340" />
-    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1582106955789">
+    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1582176211220">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582106955789" />
+    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582176211220" />
     <state x="4395" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@3840.0.1920.1080" timestamp="1576800000484" />
     <state x="2087" y="125" width="1653" height="855" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1582173520424">
       <screen x="1920" y="0" width="1920" height="1080" />

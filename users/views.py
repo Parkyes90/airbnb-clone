@@ -240,23 +240,45 @@ class UserProfileView(DetailView):
     context_object_name = "user_obj"
 
 
+PROFILE_FIELDS = (
+    ("email", "Email"),
+    ("first_name", "First Name"),
+    ("last_name", "Last Name"),
+    ("bio", "Bio"),
+    ("gender", "Gender"),
+    ("birth_date", "Birth Date"),
+    ("language", "Language"),
+    ("currency", "Currency"),
+)
+
+
 class UpdateProfileView(UpdateView):
     models = User
     template_name = "users/update-profile.html"
-    fields = (
-        "email",
-        "first_name",
-        "last_name",
-        "bio",
-        "gender",
-        "birth_date",
-        "language",
-        "currency",
-    )
+    fields = tuple(map(lambda x: x[0], PROFILE_FIELDS))
 
     def get_object(self, queryset=None):
         return self.request.user
 
+    def get_form(self, form_class=None):
+        form = super().get_form(form_class=form_class)
+        for field, label in PROFILE_FIELDS:
+            form.fields[field].widget.attrs = {"placeholder": label}
+        return form
+
+
+PASSWORD_FIELDS = (
+    ("old_password", "Current Password"),
+    ("new_password1", "New Password"),
+    ("new_password2", "Confirm New Password"),
+)
+
 
 class UpdatePasswordView(PasswordChangeView):
     template_name = "users/update-password.html"
+
+    def get_form(self, form_class=None):
+        form = super().get_form(form_class=form_class)
+        for field, label in PASSWORD_FIELDS:
+            form.fields[field].widget.attrs = {"placeholder": label}
+        return form
