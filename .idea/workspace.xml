@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ed3133f-068a-4580-9db6-e5f51271554d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/users/mixins.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/users/update-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/users/update-profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +178,7 @@
       <workItem from="1581585501604" duration="3665000" />
       <workItem from="1581654908108" duration="19318000" />
       <workItem from="1581988397137" duration="588000" />
-      <workItem from="1582085337810" duration="14080000" />
+      <workItem from="1582085337810" duration="16601000" />
     </task>
     <task id="LOCAL-00001" summary="add&#10;create rooms models">
       <created>1570776119525</created>
@@ -332,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582176207524</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="feat($ProjectFilePath): Add Profile Form Label">
+      <created>1582177371321</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1582177371321</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,7 +393,8 @@
     <MESSAGE value="feat($ProjectFilePath): Add User Profile" />
     <MESSAGE value="feat($ProjectFilePath): Add Profile View" />
     <MESSAGE value="feat($ProjectFilePath): add Password Change" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat($ProjectFilePath): add Password Change" />
+    <MESSAGE value="feat($ProjectFilePath): Add Profile Form Label" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat($ProjectFilePath): Add Profile Form Label" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2508" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581655007548">
@@ -395,14 +405,14 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2627" y="339" width="562" height="427" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581924786509" />
-    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2" timestamp="1582176207362">
+    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2" timestamp="1582177371257">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582176207362" />
-    <state x="2136" y="105" width="1536" height="894" key="DiffContextDialog" timestamp="1581656552215">
+    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582177371257" />
+    <state x="2136" y="105" width="1536" height="894" key="DiffContextDialog" timestamp="1582177359604">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2136" y="105" width="1536" height="894" key="DiffContextDialog/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581656552215" />
+    <state x="2136" y="105" width="1536" height="894" key="DiffContextDialog/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582177359604" />
     <state x="2471" y="186" width="874" height="732" key="EditFileWatcherDialog" timestamp="1581655470731">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -411,22 +421,22 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2696" y="310" width="424" height="484" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581488887392" />
-    <state width="1799" height="224" key="GridCell.Tab.0.bottom" timestamp="1582175690871">
+    <state width="1799" height="224" key="GridCell.Tab.0.bottom" timestamp="1582178836883">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1799" height="224" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582175690871" />
-    <state width="1799" height="224" key="GridCell.Tab.0.center" timestamp="1582175690870">
+    <state width="1799" height="224" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582178836883" />
+    <state width="1799" height="224" key="GridCell.Tab.0.center" timestamp="1582178836883">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1799" height="224" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582175690870" />
-    <state width="1799" height="224" key="GridCell.Tab.0.left" timestamp="1582175690870">
+    <state width="1799" height="224" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582178836883" />
+    <state width="1799" height="224" key="GridCell.Tab.0.left" timestamp="1582178836883">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1799" height="224" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582175690870" />
-    <state width="1799" height="224" key="GridCell.Tab.0.right" timestamp="1582175690871">
+    <state width="1799" height="224" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582178836883" />
+    <state width="1799" height="224" key="GridCell.Tab.0.right" timestamp="1582178836883">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1799" height="224" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582175690870" />
+    <state width="1799" height="224" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582178836883" />
     <state x="2402" y="187" key="SettingsEditor" timestamp="1581655472340">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

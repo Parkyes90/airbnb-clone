@@ -3,6 +3,7 @@ import os
 import requests
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.views import PasswordChangeView
+from django.contrib.messages.views import SuccessMessageMixin
 from django.core.files.base import ContentFile
 from django.shortcuts import redirect
 from django.urls import reverse_lazy, reverse
@@ -10,13 +11,17 @@ from django.views.generic import FormView, DetailView, UpdateView
 from django.contrib import messages
 
 from users import forms
+from users.mixins import (
+    LoggedOutOnlyView,
+    LoggedInOnlyView,
+    EmailLoginOnlyView,
+)
 from users.models import User
 
 
-class LoginView(FormView):
+class LoginView(LoggedOutOnlyView, FormView):
     template_name = "users/login.html"
     form_class = forms.LoginForm
-    success_url = reverse_lazy("core:home")
 
     def form_valid(self, form):
         email = form.cleaned_data.get("email")
@@ -27,6 +32,13 @@ class LoginView(FormView):
             login(self.request, user)
         return super().form_valid(form)
 
+    def get_success_url(self):
+        next_arg = self.request.GET.get("next")
+        if next_arg is not None:
+            return next_arg
+
+        return reverse("core:home")
+
 
 def log_out(request):
     messages.info(request, f"See you later {request.user.first_name}")
@@ -34,7 +46,7 @@ def log_out(request):
     return redirect(reverse("core:home"))
 
 
-class SignUpView(FormView):
+class SignUpView(LoggedOutOnlyView, FormView):
     template_name = "users/signup.html"
     form_class = forms.SignUpForm
     success_url = reverse_lazy("core:home")
@@ -235,13 +247,12 @@ def kakao_callback(request):
         return redirect(reverse("users:login"))
 
 
-class UserProfileView(DetailView):
+class UserProfileView(LoggedInOnlyView, DetailView):
     model = User
     context_object_name = "user_obj"
 
 
 PROFILE_FIELDS = (
-    ("email", "Email"),
     ("first_name", "First Name"),
     ("last_name", "Last Name"),
     ("bio", "Bio"),
@@ -252,10 +263,11 @@ PROFILE_FIELDS = (
 )
 
 
-class UpdateProfileView(UpdateView):
+class UpdateProfileView(LoggedInOnlyView, SuccessMessageMixin, UpdateView):
     models = User
     template_name = "users/update-profile.html"
     fields = tuple(map(lambda x: x[0], PROFILE_FIELDS))
+    success_message = "Profile Updated"
 
     def get_object(self, queryset=None):
         return self.request.user
@@ -274,11 +286,20 @@ PASSWORD_FIELDS = (
 )
 
 
-class UpdatePasswordView(PasswordChangeView):
+class UpdatePasswordView(
+    EmailLoginOnlyView,
+    LoggedInOnlyView,
+    SuccessMessageMixin,
+    PasswordChangeView,
+):
     template_name = "users/update-password.html"
+    success_message = "Password Updated"
 
     def get_form(self, form_class=None):
         form = super().get_form(form_class=form_class)
         for field, label in PASSWORD_FIELDS:
             form.fields[field].widget.attrs = {"placeholder": label}
         return form
+
+    def get_success_url(self):
+        return self.request.user.get_absolute_url()
