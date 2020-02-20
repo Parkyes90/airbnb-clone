@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ed3133f-068a-4580-9db6-e5f51271554d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/mixins/user_avatar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/users/user_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/users/update-profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/partials/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/rooms/room_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rooms/room_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/users/user_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/users/user_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
@@ -182,7 +181,7 @@
       <workItem from="1581585501604" duration="3665000" />
       <workItem from="1581654908108" duration="19318000" />
       <workItem from="1581988397137" duration="588000" />
-      <workItem from="1582085337810" duration="7350000" />
+      <workItem from="1582085337810" duration="11440000" />
     </task>
     <task id="LOCAL-00001" summary="add&#10;create rooms models">
       <created>1570776119525</created>
@@ -317,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582094050578</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="feat($ProjectFilePath): Add User Profile">
+      <created>1582106952526</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1582106952526</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +372,8 @@
     <MESSAGE value="feat($ProjectFilePath): Add Main Page styling" />
     <MESSAGE value="fix($ProjectFilePath): Fix template path" />
     <MESSAGE value="feat($ProjectFilePath): Add Message" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat($ProjectFilePath): Add Message" />
+    <MESSAGE value="feat($ProjectFilePath): Add User Profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat($ProjectFilePath): Add User Profile" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2508" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581655007548">
@@ -377,10 +384,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2627" y="339" width="562" height="427" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581924786509" />
-    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2" timestamp="1582094050450">
+    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2" timestamp="1582106952469">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582094050450" />
+    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582106952469" />
     <state x="2136" y="105" width="1536" height="894" key="DiffContextDialog" timestamp="1581656552215">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -393,35 +400,35 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2696" y="310" width="424" height="484" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581488887392" />
-    <state width="1799" height="244" key="GridCell.Tab.0.bottom" timestamp="1582093407514">
+    <state width="1799" height="244" key="GridCell.Tab.0.bottom" timestamp="1582172668980">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1799" height="244" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582093407514" />
-    <state width="1799" height="244" key="GridCell.Tab.0.center" timestamp="1582093407514">
+    <state width="1799" height="244" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582172668980" />
+    <state width="1799" height="244" key="GridCell.Tab.0.center" timestamp="1582172668980">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1799" height="244" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582093407514" />
-    <state width="1799" height="244" key="GridCell.Tab.0.left" timestamp="1582093407514">
+    <state width="1799" height="244" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582172668980" />
+    <state width="1799" height="244" key="GridCell.Tab.0.left" timestamp="1582172668980">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1799" height="244" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582093407514" />
-    <state width="1799" height="244" key="GridCell.Tab.0.right" timestamp="1582093407514">
+    <state width="1799" height="244" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582172668980" />
+    <state width="1799" height="244" key="GridCell.Tab.0.right" timestamp="1582172668980">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1799" height="244" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582093407514" />
+    <state width="1799" height="244" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582172668980" />
     <state x="2402" y="187" key="SettingsEditor" timestamp="1581655472340">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2402" y="187" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581655472340" />
-    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1582094054129">
+    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1582106955789">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582094054129" />
+    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582106955789" />
     <state x="4395" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@3840.0.1920.1080" timestamp="1576800000484" />
-    <state x="2087" y="125" width="1653" height="855" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1581495737189">
+    <state x="2087" y="125" width="1653" height="855" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1582173520424">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2087" y="125" width="1653" height="855" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581495737189" />
+    <state x="2087" y="125" width="1653" height="855" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582173520424" />
     <state x="4465" y="366" key="com.intellij.ide.util.TipDialog" timestamp="1581585503903">
       <screen x="3840" y="0" width="1920" height="1080" />
     </state>
