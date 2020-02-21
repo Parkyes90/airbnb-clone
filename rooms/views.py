@@ -160,7 +160,6 @@ def delete_photos(request, room_pk, photo_pk):
         else:
             Photo.objects.filter(pk=photo_pk).delete()
             messages.success(request, "Photo Deleted")
-        return redirect(reverse("rooms:photos", kwargs={"pk": room_pk}))
     except Room.DoesNotExist:
         return redirect(reverse("core:home"))
     return redirect(reverse("rooms:photos", kwargs={"pk": room_pk}))
