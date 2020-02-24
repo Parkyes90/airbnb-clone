@@ -4,9 +4,11 @@ import time
 
 
 class Day:
-    def __init__(self, number, past):
+    def __init__(self, number, past, month, year):
         self.number = number
         self.past = past
+        self.month = month
+        self.year = year
 
     def __str__(self):
         return str(self.number)
@@ -45,9 +47,9 @@ class Calendar(calendar.Calendar):
                             f"{self.year}{self.month}{day}", "%Y%m%d"
                         ).timetuple()
                     )
-                    new_day = Day(day, now >= u_time)
+                    new_day = Day(day, now >= u_time, self.month, self.year)
                 else:
-                    new_day = Day(day, False)
+                    new_day = Day(day, False, self.month, self.year)
                 days.append(new_day)
         return days
 
