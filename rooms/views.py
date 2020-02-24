@@ -8,7 +8,7 @@ from django.urls import reverse
 from django.views.generic import ListView, DetailView, UpdateView, FormView
 from django.views.generic.base import View
 
-from rooms.forms import SearchForm, CreatePhotoForm
+from rooms.forms import SearchForm, CreatePhotoForm, CreateRoomForm
 from rooms.models import Room, Photo
 from users.mixins import LoggedInOnlyView
 
@@ -189,3 +189,16 @@ class AddPhotoView(LoggedInOnlyView, FormView):
         form.save(**{"pk": pk})
         messages.success(self.request, "Photo Uploaded")
         return redirect(reverse("rooms:photos", kwargs={"pk": pk}))
+
+
+class CreateRoomView(LoggedInOnlyView, FormView):
+    form_class = CreateRoomForm
+    template_name = "rooms/room_create.html"
+
+    def form_valid(self, form):
+        room = form.save()
+        room.host = self.request.user
+        room.save()
+        form.save_m2m()
+        messages.success(self.request, "Room created")
+        return redirect(reverse("rooms:detail", kwargs={"pk": room.pk}))
