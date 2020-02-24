@@ -5,10 +5,10 @@ from django.core.paginator import Paginator
 from django.http import Http404
 from django.shortcuts import render, redirect
 from django.urls import reverse
-from django.views.generic import ListView, DetailView, UpdateView
+from django.views.generic import ListView, DetailView, UpdateView, FormView
 from django.views.generic.base import View
 
-from rooms.forms import SearchForm
+from rooms.forms import SearchForm, CreatePhotoForm
 from rooms.models import Room, Photo
 from users.mixins import LoggedInOnlyView
 
@@ -176,3 +176,16 @@ class EditPhotoView(LoggedInOnlyView, SuccessMessageMixin, UpdateView):
     def get_success_url(self):
         room_pk = self.kwargs.get("room_pk")
         return reverse("rooms:photos", kwargs={"pk": room_pk})
+
+
+class AddPhotoView(LoggedInOnlyView, FormView):
+    model = Photo
+    template_name = "rooms/photo_create.html"
+    fields = ("caption", "file")
+    form_class = CreatePhotoForm
+
+    def form_valid(self, form):
+        pk = self.kwargs.get("pk")
+        form.save(**{"pk": pk})
+        messages.success(self.request, "Photo Uploaded")
+        return redirect(reverse("rooms:photos", kwargs={"pk": pk}))
