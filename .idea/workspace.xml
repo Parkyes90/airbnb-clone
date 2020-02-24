@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ed3133f-068a-4580-9db6-e5f51271554d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/rooms/photo_create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rooms/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/rooms/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rooms/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rooms/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rooms/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/rooms/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/rooms/room_photos.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rooms/room_photos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/partials/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +179,7 @@
       <workItem from="1581585501604" duration="3665000" />
       <workItem from="1581654908108" duration="19318000" />
       <workItem from="1581988397137" duration="588000" />
-      <workItem from="1582085337810" duration="34960000" />
+      <workItem from="1582085337810" duration="37046000" />
     </task>
     <task id="LOCAL-00001" summary="add&#10;create rooms models">
       <created>1570776119525</created>
@@ -400,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582506553024</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="feat($ProjectFilePath): Add Photo Upload">
+      <created>1582508226712</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1582508226712</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,7 +435,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add&#10;create rooms detail view" />
     <MESSAGE value="add&#10;create search form and page" />
     <MESSAGE value="modified&#10;bug fix del useless code" />
     <MESSAGE value="add login view" />
@@ -455,7 +459,8 @@
     <MESSAGE value="feat($ProjectFilePath): Add Photo Delete" />
     <MESSAGE value="feat($ProjectFilePath): Del unused code" />
     <MESSAGE value="feat($ProjectFilePath): Add Photo Edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat($ProjectFilePath): Add Photo Edit" />
+    <MESSAGE value="feat($ProjectFilePath): Add Photo Upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat($ProjectFilePath): Add Photo Upload" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2508" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581655007548">
@@ -466,10 +471,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2627" y="339" width="562" height="427" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581924786509" />
-    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2" timestamp="1582506552929">
+    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2" timestamp="1582508226632">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582506552929" />
+    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582508226632" />
     <state x="2136" y="105" width="1536" height="894" key="DiffContextDialog" timestamp="1582267876141">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -506,10 +511,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2402" y="187" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581655472340" />
-    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1582506556508">
+    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1582508230857">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582506556508" />
+    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582508230857" />
     <state x="4395" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@3840.0.1920.1080" timestamp="1576800000484" />
     <state x="2087" y="125" width="1653" height="852" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1582267977781">
       <screen x="1920" y="0" width="1920" height="1080" />
