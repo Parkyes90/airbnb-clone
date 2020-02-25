@@ -7,6 +7,7 @@ from django.urls import reverse
 from django.views.generic.base import View
 
 from reservations.models import BookedDay, Reservation
+from reviews.forms import CreateReviewForm
 from rooms.models import Room
 
 
@@ -44,11 +45,11 @@ class ReservationDetailView(View):
             and reservation.room.host != self.request.user
         ):
             raise Http404()
-
+        form = CreateReviewForm()
         return render(
             self.request,
             "reservations/detail.html",
-            {"reservation": reservation},
+            {"reservation": reservation, "form": form},
         )
 
 

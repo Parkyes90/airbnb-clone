@@ -4,7 +4,6 @@ from django.db import models
 from django.utils import timezone
 
 from core.models import TimeStampedModel
-from reservations.managers import CustomReservationManager
 
 
 class BookedDay(TimeStampedModel):
@@ -44,8 +43,6 @@ class Reservation(TimeStampedModel):
     check_in = models.DateField()
     check_out = models.DateField()
 
-    objects = CustomReservationManager()
-
     def __str__(self):
         return f"{self.room} - {self.check_in}"
 
@@ -55,7 +52,10 @@ class Reservation(TimeStampedModel):
 
     def is_finished(self):
         now = timezone.now().date()
-        return now > self.check_out
+        is_finished = now > self.check_out
+        if is_finished:
+            BookedDay.objects.filter(reservation=self).delete()
+        return is_finished
 
     in_progress.boolean = is_finished.boolean = True
 
