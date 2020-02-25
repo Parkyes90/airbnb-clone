@@ -3,6 +3,7 @@ import uuid
 from django.contrib.auth.models import AbstractUser
 from django.core.mail import send_mail
 from django.db import models
+from django.utils.translation import gettext_lazy as _
 
 # Create your models here.
 from django.template.loader import render_to_string
@@ -20,13 +21,13 @@ class User(AbstractUser):
     GENDER_OTHER = "other"
 
     GENDER_CHOICES = (
-        (GENDER_MALE, "Male"),
-        (GENDER_FEMALE, "Female"),
-        (GENDER_OTHER, "Other"),
+        (GENDER_MALE, _("Male")),
+        (GENDER_FEMALE, _("Female")),
+        (GENDER_OTHER, _("Other")),
     )
 
-    LANGUAGE_ENGLISH = "en"
-    LANGUAGE_KOREAN = "kr"
+    LANGUAGE_ENGLISH = _("en")
+    LANGUAGE_KOREAN = _("kr")
 
     LANGUAGE_CHOICES = (
         (LANGUAGE_ENGLISH, "English"),
