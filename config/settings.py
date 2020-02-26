@@ -96,16 +96,24 @@ WSGI_APPLICATION = "config.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "HOST": os.environ.get("DB_HOST"),
-        "NAME": os.environ.get("DB_NAME"),
-        "PASSWORD": os.environ.get("DB_PASSWORD"),
-        "PORT": os.environ.get("DB_PORT"),
-        "USER": os.environ.get("DB_USER"),
+if DEBUG:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+        }
     }
-}
+else:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql_psycopg2",
+            "HOST": os.environ.get("DB_HOST"),
+            "NAME": os.environ.get("DB_NAME"),
+            "PASSWORD": os.environ.get("DB_PASSWORD"),
+            "PORT": os.environ.get("DB_PORT"),
+            "USER": os.environ.get("DB_USER"),
+        }
+    }
 
 
 # Password validation
@@ -195,13 +203,14 @@ LOCALE_PATHS = (os.path.join(BASE_DIR, "locale"),)
 
 # Sentry
 
-if not DEBUG:
-    DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
-    STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+if DEBUG:
+    DEFAULT_FILE_STORAGE = "config.custom_storages.UploadStorage"
+    STATICFILES_STORAGE = "config.custom_storages.StaticStorage"
     AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
     AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
     AWS_STORAGE_BUCKET_NAME = "airbnb-clone-parkyes90"
     AWS_AUTO_CREATE_BUCKET = True
+    AWS_BUCKET_ACL = "public-read"
     sentry_sdk.init(
         dsn=os.environ.get("SENTRY_URL"),
         integrations=[DjangoIntegration()],
@@ -209,3 +218,5 @@ if not DEBUG:
         # django.contrib.auth) you may enable sending PII data.
         send_default_pii=True,
     )
+    AWS_S3_CUSTOM_DOMAIN = f"{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com"
+    STATIC_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/static"
