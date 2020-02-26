@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ed3133f-068a-4580-9db6-e5f51271554d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.ebextensions/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/.ebextensions/packages.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ebextensions/django.config" beforeDir="false" afterPath="$PROJECT_DIR$/.ebextensions/django.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,14 +179,7 @@
       <workItem from="1581654908108" duration="19318000" />
       <workItem from="1581988397137" duration="588000" />
       <workItem from="1582085337810" duration="68954000" />
-      <workItem from="1582688307215" duration="5597000" />
-    </task>
-    <task id="LOCAL-00002" summary="add&#10;create conversations, reservations, lists, reviews models">
-      <created>1570780620791</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1570780620791</updated>
+      <workItem from="1582688307215" duration="6497000" />
     </task>
     <task id="LOCAL-00003" summary="add&#10;rooms admin customizing">
       <created>1570783580703</created>
@@ -524,7 +517,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582695324669</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="build($ProjectFilePath): Mod postgresql version">
+      <created>1582695934671</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1582695934671</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,7 +554,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat($ProjectFilePath): Add Room detail styling" />
     <MESSAGE value="feat($ProjectFilePath): Add RoomDetail Styling" />
     <MESSAGE value="feat($ProjectFilePath): Add Update View" />
     <MESSAGE value="feat($ProjectFilePath): Add Room Photos" />
@@ -579,7 +578,8 @@
     <MESSAGE value="build($ProjectFilePath): Add requirements" />
     <MESSAGE value="feat($ProjectFilePath): Add Postgresql" />
     <MESSAGE value="build($ProjectFilePath): Add yum" />
-    <option name="LAST_COMMIT_MESSAGE" value="build($ProjectFilePath): Add yum" />
+    <MESSAGE value="build($ProjectFilePath): Mod postgresql version" />
+    <option name="LAST_COMMIT_MESSAGE" value="build($ProjectFilePath): Mod postgresql version" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2508" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581655007548">
@@ -590,10 +590,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2627" y="339" width="626" height="427" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582694502059" />
-    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2" timestamp="1582695324610">
+    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2" timestamp="1582695934603">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582695324610" />
+    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582695934603" />
     <state x="2136" y="105" width="1536" height="894" key="DiffContextDialog" timestamp="1582614653564">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -630,10 +630,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2402" y="187" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581655472340" />
-    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1582695328390">
+    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1582695938294">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582695328390" />
+    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582695938294" />
     <state x="4395" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@3840.0.1920.1080" timestamp="1576800000484" />
     <state x="2087" y="125" width="1653" height="852" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1582267977781">
       <screen x="1920" y="0" width="1920" height="1080" />
