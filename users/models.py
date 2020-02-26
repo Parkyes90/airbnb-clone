@@ -11,7 +11,7 @@ from django.urls import reverse
 from django.utils.html import strip_tags
 
 from config.settings import EMAIL_FROM
-from core.managers import CustomModelManager
+from core.managers import CustomUserManager
 
 
 class User(AbstractUser):
@@ -74,7 +74,7 @@ class User(AbstractUser):
     login_method = models.CharField(
         max_length=50, choices=LOGIN_CHOICES, default=LOGIN_EMAIL
     )
-    objects = CustomModelManager()
+    objects = CustomUserManager()
 
     def get_absolute_url(self):
         return reverse("users:profile", kwargs={"pk": self.pk})

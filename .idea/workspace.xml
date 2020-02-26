@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ed3133f-068a-4580-9db6-e5f51271554d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/users/management/commands/createsu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ebextensions/02-django.config" beforeDir="false" afterPath="$PROJECT_DIR$/.ebextensions/02-django.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements-dev.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements-dev.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/managers.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/managers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,21 +183,7 @@
       <workItem from="1581654908108" duration="19318000" />
       <workItem from="1581988397137" duration="588000" />
       <workItem from="1582085337810" duration="68954000" />
-      <workItem from="1582688307215" duration="8864000" />
-    </task>
-    <task id="LOCAL-00009" summary="modified&#10;bug fix del useless code">
-      <created>1571383848482</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1571383848482</updated>
-    </task>
-    <task id="LOCAL-00010" summary="add login view">
-      <created>1573117210521</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1573117210521</updated>
+      <workItem from="1582688307215" duration="9849000" />
     </task>
     <task id="LOCAL-00011" summary="add signup view">
       <created>1573436647329</created>
@@ -528,7 +514,21 @@
       <option name="project" value="LOCAL" />
       <updated>1582698845297</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="build($ProjectFilePath): Add Sentry">
+      <created>1582699336748</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1582699336748</updated>
+    </task>
+    <task id="LOCAL-00059" summary="build($ProjectFilePath): Add Req">
+      <created>1582699388833</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1582699388833</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -558,8 +558,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat($ProjectFilePath): Add Photo Upload" />
-    <MESSAGE value="feat($ProjectFilePath): Add Session&#10;&#10;is_hosting" />
     <MESSAGE value="feat($ProjectFilePath): add Room Create" />
     <MESSAGE value="feat($ProjectFilePath): Add Calendar" />
     <MESSAGE value="feat($ProjectFilePath): Add BookedDays" />
@@ -583,7 +581,9 @@
     <MESSAGE value="build($ProjectFilePath): use database only postgresql" />
     <MESSAGE value="build($ProjectFilePath): mod environ key" />
     <MESSAGE value="build($ProjectFilePath): add dependency" />
-    <option name="LAST_COMMIT_MESSAGE" value="build($ProjectFilePath): add dependency" />
+    <MESSAGE value="build($ProjectFilePath): Add Sentry" />
+    <MESSAGE value="build($ProjectFilePath): Add Req" />
+    <option name="LAST_COMMIT_MESSAGE" value="build($ProjectFilePath): Add Req" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2508" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581655007548">
@@ -594,10 +594,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2627" y="339" width="626" height="427" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582694502059" />
-    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2" timestamp="1582699336683">
+    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2" timestamp="1582699388780">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582699336683" />
+    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582699388780" />
     <state x="2136" y="105" width="1536" height="894" key="DiffContextDialog" timestamp="1582614653564">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -634,10 +634,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2402" y="187" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581655472340" />
-    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1582699341107">
+    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1582699393237">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582699341107" />
+    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582699393237" />
     <state x="4395" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@3840.0.1920.1080" timestamp="1576800000484" />
     <state x="2087" y="125" width="1653" height="852" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1582267977781">
       <screen x="1920" y="0" width="1920" height="1080" />
@@ -657,9 +657,9 @@
     </state>
     <state x="2529" y="225" width="701" height="658" key="find.popup/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582692432424" />
     <state x="4449" y="225" width="701" height="628" key="find.popup/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@3840.0.1920.1080" timestamp="1576650700964" />
-    <state x="2576" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1582188242986">
+    <state x="2576" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1582700107155">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2576" y="257" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582188242986" />
+    <state x="2576" y="257" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582700107155" />
   </component>
 </project>
