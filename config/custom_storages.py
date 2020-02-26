@@ -11,7 +11,7 @@ class StaticStorage(S3Boto3Storage):
     def get_created_time(self, name):
         pass
 
-    location = "/static"
+    location = "static/"
     file_overwrite = False
 
 
