@@ -1,9 +1,11 @@
 from django.db.models import Q
-from django.shortcuts import redirect
+from django.http import Http404
+from django.shortcuts import redirect, render
 from django.urls import reverse
-from django.views.generic import DetailView
+from django.views.generic.base import View
 
-from conversations.models import Conversation
+from conversations.forms import AddCommentForm
+from conversations.models import Conversation, Message
 from users.models import User
 
 
@@ -23,6 +25,29 @@ def go_conversation(request, a_pk, b_pk):
         )
 
 
-class ConversationDetailView(DetailView):
-    model = Conversation
-    template_name = "conversations/conversation_detail.html"
+class ConversationDetailView(View):
+    def get(self, *args, **kwargs):
+        pk = kwargs.get("pk")
+        conversation = Conversation.objects.get_or_none(pk=pk)
+        if not conversation:
+            raise Http404
+        form = AddCommentForm()
+        return render(
+            self.request,
+            "conversations/conversation_detail.html",
+            {"conversation": conversation, "form": form},
+        )
+
+    def post(self, *args, **kwargs):
+        pk = kwargs.get("pk")
+        conversation = Conversation.objects.get_or_none(pk=pk)
+        if not conversation:
+            raise Http404
+        form = AddCommentForm(self.request.POST)
+        if form.is_valid():
+            Message.objects.create(
+                user=self.request.user,
+                **form.cleaned_data,
+                conversation=conversation
+            )
+        return redirect(reverse("conversations:detail", kwargs={"pk": pk}))
