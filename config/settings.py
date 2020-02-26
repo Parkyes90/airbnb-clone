@@ -203,7 +203,7 @@ LOCALE_PATHS = (os.path.join(BASE_DIR, "locale"),)
 
 # Sentry
 
-if DEBUG:
+if not DEBUG:
     DEFAULT_FILE_STORAGE = "config.custom_storages.UploadStorage"
     STATICFILES_STORAGE = "config.custom_storages.StaticStorage"
     AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
