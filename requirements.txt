@@ -25,6 +25,7 @@ cryptography==2.8
 django-countries==5.5
 django-dotenv==1.4.2
 django-seed==0.2.2
+django-storages==1.9.1
 django==2.2.5
 docker-compose==1.25.4
 docker[ssh]==4.2.0

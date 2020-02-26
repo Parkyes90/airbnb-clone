@@ -18,6 +18,7 @@ requests = "*"
 awsebcli = "*"
 psycopg2 = "*"
 sentry-sdk = "==0.14.1"
+django-storages = "*"
 
 [requires]
 python_version = "3.7"
