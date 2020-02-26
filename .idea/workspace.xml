@@ -179,14 +179,7 @@
       <workItem from="1581654908108" duration="19318000" />
       <workItem from="1581988397137" duration="588000" />
       <workItem from="1582085337810" duration="68954000" />
-      <workItem from="1582688307215" duration="4998000" />
-    </task>
-    <task id="LOCAL-00001" summary="add&#10;create rooms models">
-      <created>1570776119525</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1570776119525</updated>
+      <workItem from="1582688307215" duration="5597000" />
     </task>
     <task id="LOCAL-00002" summary="add&#10;create conversations, reservations, lists, reviews models">
       <created>1570780620791</created>
@@ -524,7 +517,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582694721075</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="build($ProjectFilePath): Add yum">
+      <created>1582695324668</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1582695324669</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -590,10 +590,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2627" y="339" width="626" height="427" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582694502059" />
-    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2" timestamp="1582694721016">
+    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2" timestamp="1582695324610">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582694721016" />
+    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582695324610" />
     <state x="2136" y="105" width="1536" height="894" key="DiffContextDialog" timestamp="1582614653564">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -630,10 +630,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2402" y="187" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581655472340" />
-    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1582694724716">
+    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1582695328390">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582694724716" />
+    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582695328390" />
     <state x="4395" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@3840.0.1920.1080" timestamp="1576800000484" />
     <state x="2087" y="125" width="1653" height="852" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1582267977781">
       <screen x="1920" y="0" width="1920" height="1080" />
