@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ed3133f-068a-4580-9db6-e5f51271554d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.ebextensions/01-packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/.ebextensions/01-packages.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ebextensions/02-django.config" beforeDir="false" afterPath="$PROJECT_DIR$/.ebextensions/02-django.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements-dev.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements-dev.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,14 +183,7 @@
       <workItem from="1581654908108" duration="19318000" />
       <workItem from="1581988397137" duration="588000" />
       <workItem from="1582085337810" duration="68954000" />
-      <workItem from="1582688307215" duration="8503000" />
-    </task>
-    <task id="LOCAL-00008" summary="add&#10;create search form and page">
-      <created>1571381099067</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1571381099067</updated>
+      <workItem from="1582688307215" duration="8864000" />
     </task>
     <task id="LOCAL-00009" summary="modified&#10;bug fix del useless code">
       <created>1571383848482</created>
@@ -525,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582698316227</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="build($ProjectFilePath): add dependency">
+      <created>1582698845297</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1582698845297</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -555,7 +558,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat($ProjectFilePath): Add Photo Edit" />
     <MESSAGE value="feat($ProjectFilePath): Add Photo Upload" />
     <MESSAGE value="feat($ProjectFilePath): Add Session&#10;&#10;is_hosting" />
     <MESSAGE value="feat($ProjectFilePath): add Room Create" />
@@ -580,7 +582,8 @@
     <MESSAGE value="build($ProjectFilePath): add config command" />
     <MESSAGE value="build($ProjectFilePath): use database only postgresql" />
     <MESSAGE value="build($ProjectFilePath): mod environ key" />
-    <option name="LAST_COMMIT_MESSAGE" value="build($ProjectFilePath): mod environ key" />
+    <MESSAGE value="build($ProjectFilePath): add dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="build($ProjectFilePath): add dependency" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2508" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581655007548">
@@ -591,10 +594,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2627" y="339" width="626" height="427" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582694502059" />
-    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2" timestamp="1582698316155">
+    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2" timestamp="1582698845245">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582698316155" />
+    <state x="2487" y="56" width="843" height="992" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582698845245" />
     <state x="2136" y="105" width="1536" height="894" key="DiffContextDialog" timestamp="1582614653564">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -631,10 +634,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2402" y="187" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1581655472340" />
-    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1582698320837">
+    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1582698848350">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582698320837" />
+    <state x="2475" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@1920.0.1920.1080" timestamp="1582698848350" />
     <state x="4395" y="271" width="800" height="536" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053/3840.0.1920.1080@3840.0.1920.1080" timestamp="1576800000484" />
     <state x="2087" y="125" width="1653" height="852" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1582267977781">
       <screen x="1920" y="0" width="1920" height="1080" />
