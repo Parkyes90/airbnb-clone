@@ -1,7 +1,9 @@
 from django.db import models
 from django.urls import reverse
+from django.utils import timezone
 from django_countries.fields import CountryField
 
+from cal import Calendar
 from core.models import TimeStampedModel
 
 
@@ -119,3 +121,26 @@ class Room(TimeStampedModel):
                 all_ratings += review.rating_average()
             return all_ratings / len(all_reviews)
         return 0
+
+    def first_photo(self):
+        try:
+            photo, = self.photos.all()[:1]
+            return photo.file.url
+        except ValueError:
+            return None
+
+    def get_next_four_photos(self):
+        photos = self.photos.all()[1:5]
+        return photos
+
+    def get_calendars(self):
+        now = timezone.now()
+        this_year = now.year
+        this_month = now.month
+        if this_month == 12:
+            next_month = 1
+        else:
+            next_month = this_month + 1
+        this_month_cal = Calendar(this_year, this_month)
+        next_month_cal = Calendar(this_year, next_month)
+        return [this_month_cal, next_month_cal]
