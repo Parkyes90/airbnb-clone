@@ -9,7 +9,7 @@ black = "*"
 pipenv-to-requirements = "*"
 
 [packages]
-django = "==2.2.24"
+django = "==2.2.26"
 pillow = "*"
 django-countries = "*"
 django-seed = "*"
