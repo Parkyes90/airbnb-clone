@@ -69,7 +69,7 @@ requests==2.20.1
 s3transfer==0.3.7
 semantic-version==2.5.0
 sentry-sdk==0.14.1
-setuptools==59.4.0; python_version >= '3.6'
+setuptools==65.5.1; python_version >= '3.6'
 six==1.11.0
 sqlparse==0.4.2; python_version >= '3.5'
 termcolor==1.1.0
