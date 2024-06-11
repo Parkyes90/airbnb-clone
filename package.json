@@ -12,7 +12,7 @@
   "homepage": "https://github.com/Parkyes90/airbnb-clone#readme",
   "devDependencies": {
     "autoprefixer": "^9.7.4",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "gulp-csso": "^4.0.1",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^5.1.0",
